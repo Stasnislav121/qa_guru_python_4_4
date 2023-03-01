@@ -1,4 +1,5 @@
 import math
+import random
 def test_greeting():
     """
     Напишите программу, которая выводит на экран приветствие.
@@ -50,6 +51,12 @@ def test_random_list():
     """
     # TODO создайте список
     l = []
+    i = 0
+    while i < 10:
+        l.append(random.randint(1, 100))
+        i = i + 1
+    print(l)
+    l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
 
