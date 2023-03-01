@@ -1,5 +1,7 @@
 import math
 import random
+
+
 def test_greeting():
     """
     Напишите программу, которая выводит на экран приветствие.
@@ -10,6 +12,7 @@ def test_greeting():
     output = f"Привет, {name}! Тебе {age} лет."
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
+
 
 def test_rectangle():
     """
@@ -27,6 +30,7 @@ def test_rectangle():
     area = s_rect
     assert area == 200
 
+
 def test_circle():
     """
     Напишите программу, которая берет радиус круга и выводит на экран его длину и площадь.
@@ -34,13 +38,14 @@ def test_circle():
     """
     r = 23
     # TODO сосчитайте площадь
-    S = math.pi * r**2
+    S = math.pi * r ** 2
     area = S
     assert area == 1661.9025137490005
     # TODO сосчитайте длину окружности
     P = 2 * math.pi * r
     length = P
     assert length == 144.51326206513048
+
 
 def test_random_list():
     """
@@ -56,6 +61,7 @@ def test_random_list():
     assert len(l) == 10
     assert l[0] < l[-1]
 
+
 def test_unique_elements():
     """
     Удалите из списка все повторяющиеся элементы
@@ -66,6 +72,7 @@ def test_unique_elements():
     assert isinstance(l, list)
     assert len(l) == 10
     assert l == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 def test_dicts():
     """
