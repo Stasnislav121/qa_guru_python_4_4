@@ -1,3 +1,4 @@
+import math
 def test_greeting():
     """
     Напишите программу, которая выводит на экран приветствие.
@@ -31,10 +32,14 @@ def test_circle():
     """
     r = 23
     # TODO сосчитайте площадь
-    area = 0
+    S = math.pi * r**2
+    print(S)
+    area = S
     assert area == 1661.9025137490005
     # TODO сосчитайте длину окружности
-    length = 0
+    P = 2 * math.pi * r
+    print(P)
+    length = P
     assert length == 144.51326206513048
 
 def test_random_list():
