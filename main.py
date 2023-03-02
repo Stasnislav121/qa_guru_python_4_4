@@ -22,12 +22,10 @@ def test_rectangle():
     a = 10
     b = 20
     # TODO сосчитайте периметр
-    p_rect = 2 * (a + b)
-    perimeter = p_rect
+    perimeter = 2 * (a + b)
     assert perimeter == 60
     # TODO сосчитайте площадь
-    s_rect = a * b
-    area = s_rect
+    area = a * b
     assert area == 200
 
 
@@ -38,12 +36,10 @@ def test_circle():
     """
     r = 23
     # TODO сосчитайте площадь
-    S = math.pi * r ** 2
-    area = S
+    area = math.pi * r ** 2
     assert area == 1661.9025137490005
     # TODO сосчитайте длину окружности
-    P = 2 * math.pi * r
-    length = P
+    length = 2 * math.pi * r
     assert length == 144.51326206513048
 
 
@@ -52,11 +48,7 @@ def test_random_list():
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
     # TODO создайте список
-    l = []
-    i = 0
-    while i < 10:
-        l.append(random.randint(1, 100))
-        i = i + 1
+    l = random.sample(range(1, 100), 10)
     l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
